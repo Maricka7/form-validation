@@ -1,0 +1,48 @@
+@import '../variables';
+
+#form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+
+	label {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		color: $darker-pink;
+		font-size: 18px;
+
+		input {
+			padding: 10px 5px;
+			border: 1px solid $darker-pink;
+			border-radius: 5px;
+			color: $darker-pink;
+
+			&.invalid {
+				border-color: red;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	button {
+		color: $darker-pink;
+		font-weight: bold;
+		font-size: 20px;
+		width: 30%;
+		margin: 0 auto;
+		padding: 10px 0;
+		border: 1px solid $darker-pink;
+		border-radius: 5px;
+		transition: 0.3s all ease-in-out;
+
+		&:hover {
+			background-color: $darker-pink;
+			color: $light-pink;
+		}
+	}
+}

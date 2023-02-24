@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'global/reset';
+
+@import 'components/navigation';
+@import 'components/form';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $light-pink;
+	font-family: Helvetica;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: $darker-pink;
+	margin-bottom: 30px;
+}
+
+
+
+footer {
+	text-align: center;
+	background-color: $dark-pink;
+	color: $light-pink;
+	padding: 15px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+	.container {
+		max-width: 800px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		max-width: 730px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.container {
+		max-width: 100%;
+		padding: 0 15px;
+	}
+}
+
+
